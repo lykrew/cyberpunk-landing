@@ -368,5 +368,56 @@ body {
 }
 
 /* <---section 4---> */
+.dive-bg{
+    background-color: var(--yellow);
+    height: 676px;
+    width: 100%;
+    display: flex;
+}
+
+.dive__content{
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.dive-leftside__container{
+
+}
+
+.dive__leftside img{
+    width: 540px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.dive-rightside__container{
+
+}
+
+.dive-rightside__title{
+    font-size: 42px;
+    font-family: 'Archangelsk', sans-serif;
+}
+
+.dive-rightside__description{
+
+}
+
+.dive-rightside__ul{
+
+}
+
+.dive-rightside__li{
+
+}
+
+
+.img{
+    
+}
+
 
 /* <---section 5---> */
