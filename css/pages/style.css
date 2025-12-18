@@ -14,6 +14,11 @@ body {
     overflow-x: hidden;
 }
 
+.winplay__description p span {
+    color: var(--light-blue);
+    font-weight: 500;
+}
+
 /* <---section 1---> */
 .get-started {
     background-image: url(/img/main_img.jpg);
@@ -65,39 +70,38 @@ body {
     align-items: flex-end;
 }
 
-.get-started__content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-
+.get-started__bg {
+    position: absolute;
+    justify-content: center;
     width: 624px;
-    height: 340px;
+    height: 369px;
+
+    bottom: 0;
+    right: 170px;
+    padding: 65px;
+    gap: 25px;    
+
     background: var(--yellow);
     border-top-left-radius: 30px;
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
 }
 
-.get-started__content h2 {
-    padding-left: 70px;
-}
-
-.get-started__content{
+.get-started__settings {
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center left;
     margin: 0;
+}
+
+.get-started__title {
+    position: relative;
+    justify-content: center;
+
     font-family: 'Archangelsk', sans-serif;
     font-weight: 400;
     font-size: 62px;
     line-height: 63px;
     color: var(--black);
-}
-
-.get-started__content h2 {
-    padding-top: 70px;
-    color: var(--black);
-    font-family: 'Archangelsk', sans-serif;
 }
 
 .btn__submit {
@@ -113,6 +117,7 @@ body {
     line-height: 40px;
     cursor: pointer;
 }
+
 
 
 /* <---section 2---> */
@@ -169,7 +174,7 @@ body {
     position: relative;
     background-color: var(--black);
 
-    display: flex;
+    padding: 120px;
 }
 
 .winplay::before {
@@ -190,9 +195,10 @@ body {
     margin: 0 auto;
     height: 814px;
 
-    flex: 1;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 140px;
 }
 
 .winplay__title {
@@ -213,20 +219,25 @@ body {
 }
 
 .winplay__description h2{
-    font-size: 61px;
+    font-size: 62px;
     font-family: 'Archangelsk', sans-serif;
-
 }
 
 
 
 .winplay__description p {
+    color: var(--white);
+    font-weight: 300;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     padding-top: 30px;
 }
 
 .winplay__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
     margin-top: 60px;
 }
 
@@ -243,4 +254,119 @@ body {
     background-image: url(/img/rastr-2.png);
     background-repeat: repeat-x;
 }
+
+/* --- form --- */
+.winplay__game-console {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.winplay__form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.winplay__form input {
+  padding-bottom: 13px;
+  background-color: inherit;
+  border-bottom: 1px solid var(--cyber-gray);
+
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.winplay__form input::placeholder {
+  color: var(--white);
+}
+
+.winplay__upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.winplay__upload-btn input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.winplay__upload-btn button {
+  padding: 39px 137px;
+  background-color: inherit;
+
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1.8;
+  border: 2px dashed var(--cyber-gray);
+  cursor: pointer;
+}
+
+.winplay__image img {
+  width: 788px;
+  height: auto;
+}
+
+.btn_yellow {
+    width: 192px;
+    height: 59px;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.winplay__custom-checkbox input {
+  display: none;
+}
+
+.winplay__custom-checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--white);
+}
+
+.winplay__checkmark {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--cyber-gray);
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.winplay__checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.winplay__custom-checkbox input:checked + .winplay__checkmark::after {
+  display: block;
+  left: 50%;
+  top: 50%;
+  width: 4px;
+  height: 7px;
+  border: solid var(--yellow);
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
 /* <---section 4---> */
+
+/* <---section 5---> */

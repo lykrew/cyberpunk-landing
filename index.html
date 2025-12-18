@@ -32,9 +32,9 @@
         <main class="main">
             <section class="get-started">
                 <div class="get-started__container">
-                    <div class="get-started__content">
-                        <h2>Доступно на всех платформах</p>
-                        <button type="submit" class="btn__submit">Узнать большеasdasd</button>
+                    <div class="get-started__bg get-started__settings">
+                        <h2 class="get-started__title">Доступно на всех платформах</h2>
+                        <button type="submit" class="btn__submit">Узнать больше</button>
                     </div>
                 </div>
             </section>
@@ -57,29 +57,36 @@
                 <div class="winplay__container">
                     <div class="winplay__description">
                         <h2 class="winplay__title">Играй и выигрывай!</h2>
-                        <p>Играй в  Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony PlayStation 5!
-                            Заполни форму ниже и приложи скриншот о покупке игры.
-                            Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+                        <p>Играй в  <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни <br>
+                            форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
                         </p>
-                        <div class="winplay__content">
-                            <form action=""></form>
-                            <picture></picture>
+                    <div class="winplay__game-console">
+                        <form class="winplay__form" action="#">
+                            <input class="winplay__name" type="text" placeholder="Как тебя зовут?" />
+                            <input class="winplay__email" type="email" placeholder="Твой e-mail" />
+
+                        <div class="winplay__upload-btn">
+                            <button>
+                                Прикрепить скриншот
+                                <p>.png / .jpg / .pdf</p>
+                            </button>
+
+                            <input type="file" />
+                        </div>
+
+                        <button class="winplay__btn btn btn_yellow" type="submit">Отправить</button>
+
+                        <label class="winplay__custom-checkbox" for="personalData">
+                            <input id="personalData" type="checkbox" />
+                            <span class="winplay__checkmark"></span>
+                            Согласен на обработку персональных данных
+                        </label>
+                        </form>
+                            <div class="winplay__image">
+                                <img src="./img/xbox-ps5-mobile.png" alt="Consoles" />
+                            </div>
                         </div>
                     </div>
-                    <form action="#" class="winplay__form form">
-                        <input type="text" name="name" class="form__input" placeholder="Как тебя зовут?">
-                        <input type="email" name="email" class="form__input" placeholder="Твой e-mail">
-                        <label class="form-label">
-                        <input type="file" class="form-label__file">
-                        <span class="form-label__text">Прикрепить скриншот</span>
-                        <span class="form-label__images">.png / .jpg / .pdf</span>
-                        </label>
-                        <button class="form__btn btn btn-reset">Отправить</button>
-                        <label class="form__checkbox checkbox">
-                        <input type="checkbox" class="checkbox__input">
-                        <span class="checkbox__text">Согласен на обработку персональных данных.</span>
-                        </label>
-                    </form>
                 </div>
             </section>
 
